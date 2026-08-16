@@ -11,14 +11,14 @@ export default function LoginPage() {
     const handleLogin = async (e: React.FormEvent) => 
     { 
         e.preventDefault();
-        if (email === "admin@oceanscode.com" && password === "admin") 
+        if (email === "admin@admin.com" && password === "admin") 
         {
             localStorage.setItem("isLoggedIn", "true");
             router.push("/properties");
         }
         else
         {
-            alert("Invalid creds: Use admin@oceanscode.com & admin");
+            alert("Invalid creds: Use admin@admin.com & admin");
         }
     };
 
